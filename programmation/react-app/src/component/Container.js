@@ -84,69 +84,69 @@ const Container = () => {
     },
   }
 
-const ser = [14,23,21,17,15,10,12,17,21]
-var opti={
-chart:{
-  type:'polarrArea'
-},
-stroke:{
-   colors:['#fff']
-},
-fill:{
-  opacity:0.8
-},
-responsive:[{
-  breakpoint:480,
-  options: {
-    chart:{
-      width:200
+  const ser = [14, 23, 21, 17, 15, 10, 12, 17, 21]
+  var opti = {
+    chart: {
+      type: 'polarrArea'
     },
-    legend:{
-      position:"bottom"
+    stroke: {
+      colors: ['#fff']
+    },
+    fill: {
+      opacity: 0.8
+    },
+    responsive: [{
+      breakpoint: 480,
+      options: {
+        chart: {
+          width: 200
+        },
+        legend: {
+          position: "bottom"
+        }
+      }
+    }]
+  };
+
+  const arcor = [
+    {
+      title: "titre 1",
+      content: "contenu 1"
+    },
+    {
+      title: "titre 2",
+      content: "contenu 2"
     }
-  }   
-}]
-};
+  ]
 
-const arcor=[
-{
-  title:"titre 1",
-  content:"contenu 1"
-},
-{
-  title:"titre 2",
-  content:"contenu 2"
-}
-]
+  var title = "lllllllllllllllllllllllllllllllll"
+  const bad =
+  {
+    title: "primary",
+    color: 'bg-success',
+  }
 
- var title="lllllllllllllllllllllllllllllllll"
- const bad=
-{ 
-  title:"primary",
-  color :'bg-success',
-}
-
-const badgecontainer=  {
-  title:4,
-  color:"bg-danger",
-}
-const badgeheading= {
-  title:"secondary",
-  color:'bg-warning',
-}
-return (
-<main id="main" className="main">
-  <Breadcrumb title="Keou" links={["home", "statistics"]} />
-  <Graph option={options} series={series} title="Line chart" />
-  <Graph option={op} series={se} title=" area chart" />
-  {/* <Graph option={t} series= <div class="card-body"></div>{ll} title="premiere" /> */}
+  const badgecontainer = {
+    title: 4,
+    color: "bg-danger",
+  }
+  const badgeheading = {
+    title: "secondary",
+    color: 'bg-warning',
+  }
+  return (
+    <main id="main" className="main">
+      <Breadcrumb position="end" links={["Home", "Library", "Centered Position"]} />
+      <Graph option={options} series={series} title="Line chart" />
+      <Graph option={op} series={se} title=" area chart" />
+      {/* <Graph option={t} series= <div class="card-body"></div>{ll} title="premiere" /> */}
       <Graph option={opti} series={ser} title="pieCharts" />
-      <Acordion element ={arcor} />
-      <Alert title ='dfghjhjk' />
+      <Acordion element={arcor} />
+      <Alert title='dfghjhjk' />
       <Badge title="primary" color="bg-danger" />
-      <Button title="first button" color="bg-danger" badge={badgecontainer}/>
-      <Heading size="h1" title="Example h1" badge={badgeheading}/>
-      
+      <Button title="first button" color="bg-danger" badge={badgecontainer} />
+      <Heading size="h1" title="Example h1" badge={badgeheading} />
+
     </main>
   )
 }

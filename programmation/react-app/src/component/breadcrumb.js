@@ -1,11 +1,9 @@
-import { render } from "react-dom"
 
 const Breadcrumb = (props) => {
 
   return (
-    <div className="pagetitle">
-      <h1>{props.title}</h1>
-      <nav>
+   <div>
+      <nav className={"d-flex justify-content-"+props.position}>
         <ol className="breadcrumb">
           {
             props.links.map(element => {
@@ -14,7 +12,7 @@ const Breadcrumb = (props) => {
           }
         </ol>
       </nav>
-    </div>
+   </div>
   )
 }
 
