@@ -1,6 +1,8 @@
 import './App.css';
+import Container from './component/Layout/Container/Container';
 import Layout from './component/Layout/Layout';
-import Container from './component/Container';
+import BgChange from './component/bg_Change/BgChange';
+
 
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
     <div className="App">
       <Layout />
       <Container />
+      {/* <BgChange/> */}
      </div>
   );
 }
