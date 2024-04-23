@@ -9,6 +9,10 @@ import {
 } from "react-router-dom";
 import Progress from './component/school_year/progression/Progress';
 import Container from './component/Layout/Container/Container';
+import Login from './component/Login/Login';
+import Footer from './component/Footer/Footer';
+import Register from './component/Register/Register';
+import Contact from './component/Contact/Contact';
 
 
 function App() {
@@ -23,10 +27,20 @@ function App() {
           <Route path={"/Progression"}>
             <Progress/>
           </Route>
+          <Route path={"/Login"}>
+            <Login/>
+          </Route>
+          <Route path={"/Register"}>
+            <Register/>
+          </Route>
+          <Route path={"/Contact"}>
+            <Contact/>
+          </Route>
         </Switch>
       </div>
       <Layout/>
-      <BgChange/> 
+  
+      <Footer/>
 
      </div>
      </Router>
