@@ -13,6 +13,8 @@ import Login from './component/Login/Login';
 import Footer from './component/Footer/Footer';
 import Register from './component/Register/Register';
 import Contact from './component/Contact/Contact';
+import { Table } from './component/Components/Table';
+import { StudentList } from './component/Students/studentList';
 
 
 function App() {
@@ -35,6 +37,9 @@ function App() {
           </Route>
           <Route path={"/Contact"}>
             <Contact/>
+          </Route>
+          <Route path={"/Student-list"}>
+            <StudentList />
           </Route>
         </Switch>
       </div>

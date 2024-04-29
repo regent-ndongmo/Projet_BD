@@ -1,4 +1,5 @@
 import React from 'react';
+import { Table } from '../../Components/Table';
 
 const Container = () => {
     return (
@@ -509,6 +510,8 @@ const Container = () => {
                 {/* <!-- End Right side columns --> */}
 
                 </div>
+
+                <Table />
             </section>
 
         </main>

@@ -59,7 +59,7 @@ const SideBar = () => {
                     </Link>
                     <ul id="forms-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
-                            <Link to="forms-elements.html">
+                            <Link to="/Student-list">
                                 <i className="bi bi-circle"></i><span>students list</span>
                             </Link>
                         </li>
