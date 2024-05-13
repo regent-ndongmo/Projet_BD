@@ -13,6 +13,8 @@ import Login from './component/Login/Login';
 import Footer from './component/Footer/Footer';
 import Register from './component/Register/Register';
 import Contact from './component/Contact/Contact';
+import User_Profile from './component/Profile/User_Profile/User_Profile';
+import Helps from './component/Help/Helps';
 
 
 function App() {
@@ -35,6 +37,12 @@ function App() {
           </Route>
           <Route path={"/Contact"}>
             <Contact/>
+          </Route>
+          <Route path={"/User_Profile"}>
+            <User_Profile/>
+          </Route>
+          <Route path={"/Helps"}>
+            <Helps/>
           </Route>
         </Switch>
       </div>

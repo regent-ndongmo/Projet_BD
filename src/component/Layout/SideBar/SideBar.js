@@ -141,14 +141,14 @@ const SideBar = () => {
                 <li className="nav-heading">Pages</li>
 
                 <li className="nav-item">
-                    <Link className="nav-link collapsed" to="users-profile.html">
+                    <Link className="nav-link collapsed" to="User_Profile">
                         <i className="bi bi-person"></i>
                         <span>Profile</span>
                     </Link>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link collapsed" to="pages-faq.html">
+                    <Link className="nav-link collapsed" to="Helps">
                         <i className="bi bi-question-circle"></i>
                         <span>helps</span>
                     </Link>
