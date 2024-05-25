@@ -24,8 +24,8 @@ const User_Profile = () => {
             <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
               <img src="logo192.png" alt="Profile" class="rounded-circle"/>
-              <h2>Regent</h2>
-              <h3>Web Designer</h3>
+              <h2>Groupe BD</h2>
+              <h3>Info 3</h3>
               <div class="social-links mt-2">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>

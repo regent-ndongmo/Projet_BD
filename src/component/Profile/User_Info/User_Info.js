@@ -36,7 +36,7 @@ const User_Info = () => {
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label ">Full Name</div>
-                    <div class="col-lg-9 col-md-8">Regent</div>
+                    <div class="col-lg-9 col-md-8">Groupe BD</div>
                   </div>
 
                   <div class="row">

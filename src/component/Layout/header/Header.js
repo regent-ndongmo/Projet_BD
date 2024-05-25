@@ -1,36 +1,39 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
 import './Header.css'
 import SearchBar from '../SearchBar/SearchBar';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
     return (
         <div>
             <header id="header" className="header fixed-top d-flex align-items-center">
 
-                <div className="d-flex align-items-center justify-content -between">
-                    <Link to="index.html" className="logo d-flex align-items-center">
+                <div className="d-flex align-items-center justify-content-between">
+                    <Link to="" className="logo d-flex align-items-center">
                         <img src="assets/img/logo.png" alt="" />
-                        <span className="d-none d-lg-block">state management system</span>
+                        <span className="d-none d-lg-block">State Management System</span>
                     </Link>
-                    <i className="bi bi-list toggle-sidebar-btn"></i>
+                    <i
+                        className={`bi bi-list toggle-sidebar-btn ${isSidebarOpen ? 'active' : ''}`}
+                        onClick={toggleSidebar}
+                    ></i>
                 </div>
-                <SearchBar />
+                {/* <SearchBar /> */}
 
                 <nav className="header-nav ms-auto">
 
                     <ul className="d-flex align-items-center">
-                        <button className="bg-primary text-light rounded mx-3">
-                            <li className="badge bg-primary text-light btn btn-primary">
-                                <Link className="nav-link nav-icon" to="/" data-bs-toggle="dropdown">
-                                    <i className="bi bi-printer bg-primary text-light"></i>
-                                    <span className="text-light">print</span>
-                                </Link>
-                            </li>
-                        </button>
-
-
+                        
                         <li className="nav-item d-block d-lg-none">
                             <Link className="nav-link nav-icon search-bar-toggle " to="#">
                                 <i className="bi bi-search"></i>
@@ -38,11 +41,6 @@ const Header = () => {
                         </li>
 
                         <li className="nav-item dropdown">
-
-                            <Link className="nav-link nav-icon" to="#" data-bs-toggle="dropdown">
-                                <i className="bi bi-bell"></i>
-                                <span className="badge bg-primary badge-number">4</span>
-                            </Link>
 
                             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
                                 <li className="dropdown-header">

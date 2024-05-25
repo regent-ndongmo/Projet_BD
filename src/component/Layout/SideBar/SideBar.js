@@ -23,31 +23,19 @@ const SideBar = () => {
                     <ul id="components-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
 
                         <li>
-                            <Link to="components-carousel.html">
+                            <Link to="School-information">
                                 <i className="bi bi-circle"></i><span>school year information</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="components-list-group.html">
-                                <i className="bi bi-circle"></i><span>school examination result</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="components-modal.html">
-                                <i className="bi bi-circle"></i><span>history</span>
-                            </Link>
-                        </li>
-
-
-                        <li>
-                            <Link to="Progression">
-                                <i className="bi bi-circle"></i><span>Progression</span>
+                            <Link to="salle">
+                                <i className="bi bi-circle"></i><span>Salle Disponible</span>
                             </Link>
                         </li>
 
                         <li>
-                            <Link to="components-tooltips.html">
-                                <i className="bi bi-circle"></i><span>home</span>
+                            <Link to="cours">
+                                <i className="bi bi-circle"></i><span>Liste Cours</span>
                             </Link>
                         </li>
                     </ul>
@@ -59,23 +47,13 @@ const SideBar = () => {
                     </Link>
                     <ul id="forms-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                         <li>
-                            <Link to="forms-elements.html">
+                            <Link to="/StudentList">
                                 <i className="bi bi-circle"></i><span>students list</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to="forms-layouts.html">
-                                <i className="bi bi-circle"></i><span>add students</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="forms-editors.html">
-                                <i className="bi bi-circle"></i><span>search student</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="forms-validation.html">
-                                <i className="bi bi-circle"></i><span>modify student information</span>
+                            <Link to="/note">
+                                <i className="bi bi-circle"></i><span>Note</span>
                             </Link>
                         </li>
                     </ul>
@@ -86,41 +64,16 @@ const SideBar = () => {
                         <i className="bi bi-layout-text-window-reverse"></i><span>teachers</span><i className="bi bi-chevron-down ms-auto"></i>
                     </Link>
                     <ul id="tables-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
+                        
                         <li>
-                            <Link to="tables-general.html">
-                                <i className="bi bi-circle"></i><span>teachers per classNamerom</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="tables-data.html">
+                            <Link to="TeacherList">
                                 <i className="bi bi-circle"></i><span>teachers list</span>
                             </Link>
                         </li>
                     </ul>
                 </li>
-                <li className="nav-item">
-                    <Link className="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" to="#">
-                        <i className="bi bi-bar-chart"></i><span>statistics</span><i className="bi bi-chevron-down ms-auto"></i>
-                    </Link>
-                    <ul id="charts-nav" className="nav-content collapse " data-bs-parent="#sidebar-nav">
-                        <li>
-                            <Link to="charts-chartjs.html">
-                                <i className="bi bi-circle"></i><span>year statistic</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="charts-apexcharts.html">
-                                <i className="bi bi-circle"></i><span>className statistic</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="charts-echarts.html">
-                                <i className="bi bi-circle"></i><span>financial statistic</span>
-                            </Link>
-                        </li>
-                    </ul>
-                </li>
-                <li className="nav-item">
+                
+                {/* <li className="nav-item">
                     <Link className="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" to="#">
                         <i className="bi bi-gem"></i><span>classNameroom</span><i className="bi bi-chevron-down ms-auto"></i>
                     </Link>
@@ -137,15 +90,15 @@ const SideBar = () => {
                         </li>
 
                     </ul>
-                </li>
+                </li> */}
                 <li className="nav-heading">Pages</li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <Link className="nav-link collapsed" to="User_Profile">
                         <i className="bi bi-person"></i>
                         <span>Profile</span>
                     </Link>
-                </li>
+                </li> */}
 
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="Helps">
@@ -161,7 +114,7 @@ const SideBar = () => {
                     </Link>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <Link className="nav-link collapsed" to="Register">
                         <i className="bi bi-card-list"></i>
                         <span>Register</span>
@@ -173,7 +126,7 @@ const SideBar = () => {
                         <i className="bi bi-box-arrow-in-right"></i>
                         <span>Login</span>
                     </Link>
-                </li>
+                </li> */}
                 {/* </Router> */}
 
             </ul>

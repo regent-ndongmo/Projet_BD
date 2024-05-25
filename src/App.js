@@ -7,7 +7,6 @@ import {
   Route,
   Switch
 } from "react-router-dom";
-import Progress from './component/school_year/progression/Progress';
 import Container from './component/Layout/Container/Container';
 import Login from './component/Login/Login';
 import Footer from './component/Footer/Footer';
@@ -15,6 +14,12 @@ import Register from './component/Register/Register';
 import Contact from './component/Contact/Contact';
 import User_Profile from './component/Profile/User_Profile/User_Profile';
 import Helps from './component/Help/Helps';
+import StudentList from './component/Student/StudentList';
+import SchoolInformation from './component/School/SchoolInformation';
+import Salle from './component/School/salle';
+import Cours from './component/School/Cours';
+import TeacherList from './component/Teacher/TeacherList';
+import Note from './component/Student/Note';
 
 
 function App() {
@@ -26,8 +31,8 @@ function App() {
           <Route exact path={'/'}>
             <Container/>
           </Route>
-          <Route path={"/Progression"}>
-            <Progress/>
+          <Route path={"/cours"}>
+            <Cours/>
           </Route>
           <Route path={"/Login"}>
             <Login/>
@@ -44,6 +49,23 @@ function App() {
           <Route path={"/Helps"}>
             <Helps/>
           </Route>
+          <Route path={"/StudentList"}>
+            <StudentList/>
+          </Route>
+          <Route path={"/School-information"}>
+            <SchoolInformation/>
+          </Route>
+          <Route path={"/salle"}>
+            <Salle/>
+          </Route>
+
+          <Route path={"/TeacherList"}>
+            <TeacherList/>
+          </Route>
+          <Route path={"/note"}>
+            <Note/>
+          </Route>
+
         </Switch>
       </div>
       <Layout/>
