@@ -1,0 +1,71 @@
+server:
+  port: 7777
+
+spring:
+  application:
+    name: gateway
+  zipkin:
+    base-url: http://192.168.22.241:9411/
+
+  cloud:
+    gateway:
+      routes:
+        - id: note-service
+          uri: http://localhost:8089
+          predicates:
+            - Path=/note/**
+
+        - id: activite-service
+          uri: http://localhost:8090
+          predicates:
+            - Path=/activite/**
+
+        - id: classe-service
+          uri: http://localhost:8086
+          predicates:
+            - Path=/classe/**
+
+        - id: cours-service
+          uri: http://localhost:8087
+          predicates:
+            - Path=/cours/**
+
+        - id: cycle-service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/cycle/**
+
+        - id: horaire-service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/horaire/**
+
+        - id: salle-service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/salle/**
+
+        - id: semestre-service
+          uri: http://localhost:8080
+          predicates:
+            - Path=/semestre/**
+
+        - id: sequence-service
+          uri: http://localhost:8082
+          predicates:
+            - Path=/sequence/**
+
+        - id: eleve-service
+          uri: http://localhost:8088
+          predicates:
+            - Path=/eleve/**
+
+        - id: professeur-service
+          uri: http://localhost:8085
+          predicates:
+            - Path=/professeur/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
